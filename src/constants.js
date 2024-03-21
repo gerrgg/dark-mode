@@ -1,16 +1,30 @@
 import { styled, createGlobalStyle } from "styled-components";
 
 export const lightTheme = {
-  bodyColor: "#333",
-  background: "#fff",
-  primary: "red",
+  bodyColor: "#212227",
+  background: "#EBF2FA",
+  primary: "#FF6978 ",
+  secondary: "#BDD4E7",
 };
 
 export const darkTheme = {
-  bodyColor: "#fff",
-  background: "#333",
-  primary: "blue",
+  bodyColor: "#D7CDCC",
+  background: "#1D1E2C",
+  primary: "#9C528B",
+  secondary: "#CE8147",
 };
+
+export const fontSizes = [
+  "4.369rem",
+  "2.369rem",
+  "1.777rem",
+  "1.333rem",
+  "1rem",
+  "0.750rem",
+  "10px",
+];
+
+export const fontFamiles = ['"Stylish", serif', '"Offside", sans-serif'];
 
 export const Root = styled.div`
   display: flex;
@@ -20,6 +34,13 @@ export const Root = styled.div`
   color: ${(props) => props.theme.bodyColor};
   background: ${(props) => props.theme.background};
   align-items: center;
+`;
+
+export const Wrap = styled.div`
+  box-sizing: content-box;
+  max-width: 1280px;
+  padding: 0 5rem;
+  margin: 0 auto;
 `;
 
 export const GlobalStyle = createGlobalStyle`

@@ -2,4 +2,5 @@
   Forward all exports.
   This pattern is explained further below.
 */
-export * from "./Button";
+export * from "./Heading";
+export { default } from "./Heading";
